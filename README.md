@@ -1,4 +1,4 @@
-### mq 
+### mq timed functions that accept timeout of type CLOCK_MONOTONIC
 
 The POSIX message queue functions:
 ```
