@@ -1,14 +1,15 @@
 ### mq 
 
-Implemented wrapper functions named
-```
-mq_timedreceive_monotonic
-mq_timedsend_monotonic
-```
-for POSIX message queue functions:
+The POSIX message queue functions:
 ```
 mq_timedreceive
 mq_timedsend
 ```
-that accept as parameter CLOCK_MONOTONIC instead of CLOCK_REALTIME.
+are limitied to using CLOCK_REALTIME as timeout parameter.
 
+Here is an implementation of two wrapper functions for them, named:
+```
+mq_timedreceive_monotonic
+mq_timedsend_monotonic
+```
+that accept as parameter CLOCK_MONOTONIC. Implementation was done using linux API poll()
