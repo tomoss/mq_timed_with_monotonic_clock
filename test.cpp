@@ -6,7 +6,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <csignal>
-#include "mq_monotonic.h"
+#include "mq_monotonic.hpp"
 
 #define QUEUE_NAME "/mq-test"
 #define MAX_MESSAGES 10
