@@ -1,4 +1,4 @@
-### mq timed functions that accept timeout of type CLOCK_MONOTONIC
+### POSIX Message Queue functions that accept timeout of type CLOCK_MONOTONIC
 
 The POSIX message queue functions:
 ```
@@ -12,4 +12,6 @@ Here is an implementation of two wrapper functions for them, named:
 mq_timedreceive_monotonic
 mq_timedsend_monotonic
 ```
-that accept as timeout parameter **CLOCK_MONOTONIC**. Implementation was done using linux API poll()
+that accept as timeout parameter **CLOCK_MONOTONIC**. 
+
+Implementation was done using linux API poll()
